@@ -138,7 +138,7 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 	            operator = value;
 	            number1 = displayText.getText();
 	            displayText.setText("");
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        case "=":
 	            number2 = displayText.getText();
@@ -148,14 +148,14 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 	            number1 = "";
 	            number2 = "";
 	            operator = "";
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        case "C":
 	            number1 = "";
 	            number2 = "";
 	            operator = "";
 	            displayText.setText("");
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        default:
 	            displayText.setText(displayText.getText() + value);
@@ -170,15 +170,15 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 	    switch (operator) {
 	        case "+":
 	            resultadoOperacion = Double.toString(primerNumero + segundoNumero);
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        case "-":
 	            resultadoOperacion = Double.toString(primerNumero - segundoNumero);
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        case "*":
 	            resultadoOperacion = Double.toString(primerNumero * segundoNumero);
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 
 	        case "/":
 	            if (segundoNumero != 0) {
@@ -186,7 +186,7 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 	            } else {
 	                resultadoOperacion = "Error: Division by zero";
 	            }
-	            break; // Agrega 'break' para salir del switch
+	            break; 
 	    }
 	    return resultadoOperacion;
 	}
